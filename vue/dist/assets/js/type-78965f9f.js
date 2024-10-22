@@ -1,0 +1,1 @@
+import{h as t}from"./index-16b2bfc2.js";const n=e=>t.get("/admin/wms/material/type",e,{headers:{noLoading:!0}}),r=e=>t.post("/admin/wms/material/type",e),s=e=>t.put("/admin/wms/material/type",e),m=e=>t.delete("/admin/wms/material/type",e),p=e=>t.delete("/admin/wms/material/type/batch",e);export{r as a,p as b,m as d,n as g,s as u};

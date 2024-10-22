@@ -1,0 +1,1 @@
+import{h as t}from"./index-16b2bfc2.js";const i=e=>t.get("/admin/statistics/index/order",e,{headers:{noLoading:!0}}),s=e=>t.get("/admin/statistics/index/order/line",e,{headers:{noLoading:!0}}),a=e=>t.get("/admin/statistics/index/serviceOrder/line",e,{headers:{noLoading:!0}});export{i as a,a as b,s as g};

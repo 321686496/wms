@@ -1,0 +1,1 @@
+import{q as r}from"./index-16b2bfc2.js";import{C as e}from"./vendor-7d8626b5.js";const s=()=>{const a=e(!1),t=e("");return{getCaptcha:()=>{a.value||(a.value=!0,r().then(c=>{t.value=c.data}).finally(()=>{a.value=!1}))},captchaLoading:a,captchaUrl:t}},p=s;export{p as u};

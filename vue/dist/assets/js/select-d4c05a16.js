@@ -1,0 +1,1 @@
+import{h as e}from"./index-16b2bfc2.js";const t=()=>e.get("/admin/security/menu/tree",{},{headers:{noLoading:!0}}),n=()=>e.get("/admin/security/dept/tree",{},{headers:{noLoading:!0}}),a=()=>e.get("/admin/security/menu/tree/tenant",{},{headers:{noLoading:!0}}),u=()=>e.get("/admin/security/role/select",{},{headers:{noLoading:!0}});export{t as a,a as b,u as c,n as q};

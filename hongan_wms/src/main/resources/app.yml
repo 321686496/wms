@@ -1,0 +1,32 @@
+app:
+  swagger:
+    basePackage: www.ponlay.com
+    title: PL API
+    description: API Document.
+    version: 2.0
+    author: ponlay
+    url: https://www.ponlay.com
+    email: 123@qq.com
+  session:
+    cookieName: PLSESSIONID
+  token:
+    useCookie: true
+    tokenExpires: 14400
+    cookieName: PLTOKENID
+  cookie:
+    httpOnly: true
+    path: /
+    expires: 14400
+    https: false
+  captcha:
+    nameSpace: PLCAPTCHA
+    img:
+      cacheName: IMG
+      verifyName: IMGVERIFY
+      expires: 1200
+      verifyExpires: 600
+    phone:
+      cacheName: PHONE
+      verifyName: PHONEVERIFY
+      expires: 300
+      verifyExpires: 300

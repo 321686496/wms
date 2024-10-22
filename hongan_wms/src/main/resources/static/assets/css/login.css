@@ -1,0 +1,185 @@
+.qh-login {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 30px 0 100px 0;
+    background-size: 100% 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.qh-login.init {
+    background-color: gray;
+}
+
+.qh-login.init .qh-login-form {
+    background-color: #fff;
+}
+
+.qh-title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.qh-login-form .forget {
+    float: right;
+}
+
+.qh-login-form {
+    margin: auto;
+    padding: 40px;
+    background-color: #eee;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.qh-login-form h2 {
+    padding: 0 0 30px 10px;
+    text-align: center;
+    font-size: 24px;
+    color: gray;
+    font-weight: 700;
+}
+
+.qh-login .layui-tab-title {
+    text-align: center;
+}
+
+.qh-login .layui-tab-title li {
+    font-size: 18px;
+    color: #424242;
+}
+
+.qh-login-form .layui-form-item {
+    border-radius: 2px;
+    border: 1px solid #ddd;
+}
+
+.qh-login-form .layui-form-label {
+    width: 46px;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    height: 42px;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.qh-login-form .layui-input-block {
+    margin-left: 46px;
+}
+
+.qh-login-form .layui-input {
+    height: 42px;
+    border-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 15px;
+}
+
+.qh-login-form .layui-btn {
+    height: 42px;
+    border-width: 0;
+    font-size: 16px;
+}
+
+.qh-login-form .layui-input-inline {
+    width: calc(100% - 177px);
+    float: left !important;
+    margin: 0 1px 0 0 !important;
+    left: 0;
+}
+
+.qh-login-form .captcha-message,
+.qh-login-form .captcha-img {
+    width: 130px;
+    height: 42px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #1E8FeF;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.qh-login-form .captcha-message {
+    color: #1E8FeF;
+    background-color: white;
+}
+
+.qh-login-form .captcha-message.disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.qh-login-form .captcha-img img {
+    width: 128px;
+    height: 40px;
+    vertical-align: top !important;
+}
+
+.qh-step {
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.qh-step-item {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.qh-step-item:last-child::after {
+    content:"";
+    display: none;
+}
+
+.qh-step-item::after {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: gray;
+    top: 15px;
+}
+
+
+.qh-step-item > i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    border-radius: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.qh-step-item > span {
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.qh-step-item.active > i {
+    border: 1px solid #1040ff;
+    background-color: #2E80F5;
+}
+
+.qh-step-item.active > span {
+    color: #2e80f5;
+}

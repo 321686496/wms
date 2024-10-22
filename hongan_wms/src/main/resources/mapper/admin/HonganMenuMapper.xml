@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongan.template.admin.mapper.HonganMenuMapper">
+
+    <select id="getMenuPermsByIds" resultType="String">
+        select DISTINCT(perms)
+        from hongan_menu
+        where deleted = 0
+        and enable = 1
+        and perms is not null
+        and perms != ''
+        and id in
+        <foreach item="item" index="index" collection="ids" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+
+</mapper>

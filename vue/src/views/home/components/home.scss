@@ -1,0 +1,114 @@
+.flow_main {
+	width: 100%;
+	height: 400px;
+}
+.line_block {
+	box-sizing: border-box;
+
+	// height: 315px;
+	height: 400px;
+	.date_wrap {
+		display: flex;
+		align-items: center;
+	}
+	.line_echarts_wrap {
+		height: 325px;
+	}
+}
+.pie_block {
+	box-sizing: border-box;
+
+	// height: 345px;
+	height: 400px;
+	.pie_echarts_wrap {
+		height: 335px;
+	}
+}
+.menu_block {
+	.menu_list {
+		display: flex;
+		flex-flow: row wrap;
+		padding-top: 10px;
+		.menu_item {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 70px;
+			height: 60px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			border: 1px dashed #dddddd;
+			border-radius: 8px;
+			&:hover {
+				border-color: var(--el-color-primary);
+			}
+			.close_wrap {
+				position: absolute;
+				top: -10px;
+				right: -10px;
+			}
+			.menu_name {
+				max-width: 100%;
+				margin-top: 4px;
+				overflow: hidden;
+				font-size: 14px;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				opacity: 0.8;
+			}
+		}
+	}
+	.menu_dialog_wrap {
+		display: flex;
+		justify-content: center;
+		height: 55vh;
+		.left_wrap {
+			box-sizing: border-box;
+			width: 300px;
+			height: 100%;
+			overflow: auto;
+			border: 1px solid #e5e6e7;
+			border-radius: 4px;
+		}
+		.cent_wrap {
+			margin: 0 30px;
+		}
+	}
+}
+.more {
+	font-size: 14px;
+}
+.fund_statistics {
+	box-sizing: border-box;
+	height: 140px;
+	.statistics_item_list {
+		display: flex;
+		flex-flow: row wrap;
+		.statistics_item {
+			box-sizing: border-box;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: center;
+			padding: 5px;
+			margin-top: 12px;
+			margin-right: 12px;
+			border: 0;
+			border-left: 3px solid var(--el-color-primary);
+			border-radius: 5px;
+			box-shadow: 0 2.5px 2px #d8dfeb;
+			.statistics_item_label {
+				font-size: 14px;
+				opacity: 0.6;
+			}
+			.statistics_item_value {
+				font-size: 14px;
+				font-weight: bold;
+				color: var(--el-color-primary);
+			}
+		}
+	}
+}

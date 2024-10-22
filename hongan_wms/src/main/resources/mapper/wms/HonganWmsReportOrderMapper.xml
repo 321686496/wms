@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongan.template.wms.mapper.HonganWmsReportOrderMapper">
+    <select id="getTodayBillCount" resultType="Integer">
+        SELECT count(*)
+        from hongan_wms_report_order
+        where DATE(created_at) = CURDATE();
+    </select>
+</mapper>

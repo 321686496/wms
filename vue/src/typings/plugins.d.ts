@@ -1,0 +1,11 @@
+declare module "nprogress";
+declare module "js-md5";
+declare module "echarts-liquidfill";
+declare module "qs";
+declare module "@/utils/areaData.js";
+declare module "xlsx/dist/xlsx.full.min.js";
+declare module "vue3-print-nb";
+declare module "js-table2excel";
+declare module "splitpanes";
+declare module "jsbarcode";
+declare module "lodash-es";

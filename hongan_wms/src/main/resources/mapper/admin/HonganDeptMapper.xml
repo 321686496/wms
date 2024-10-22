@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongan.template.admin.mapper.HonganDeptMapper">
+    <select id="selectByIdXml" resultType="HonganDept">
+        SELECT *
+        FROM hongan_dept
+        where id = #{id}
+    </select>
+
+    <update id="updateDeptChildren">
+        update hongan_dept set ancestors =
+        <foreach collection="depts" item="item" index="index"
+                 separator=" " open="case id" close="end">
+            when #{item.id} then #{item.ancestors}
+        </foreach>
+        where id in
+        <foreach collection="depts" item="item" index="index"
+                 separator="," open="(" close=")">
+            #{item.id}
+        </foreach>
+    </update>
+
+    <select id="selectChildrenDeptById" resultType="HonganDept">
+        select *
+        from hongan_dept
+        where find_in_set(#{deptId}, ancestors)
+    </select>
+
+    <update id="updateDeptStatusNormal">
+        update hongan_dept set enable = 1 where id in
+        <foreach collection="deptIds" item="deptId" open="(" separator="," close=")">
+            #{deptId}
+        </foreach>
+    </update>
+
+</mapper>

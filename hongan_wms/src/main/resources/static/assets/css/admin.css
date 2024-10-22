@@ -1,0 +1,248 @@
+.page-title {
+    display: flex;
+    width: 100%;
+    vertical-align: middle;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.page-title .search {
+    display: inline-block;
+}
+
+.page-title .bind {
+    display: block;
+}
+
+.page-title .cancel {
+    display: none;
+}
+
+.has .page-title .bind {
+    display: none;
+}
+
+.has .page-title .cancel {
+    display: block;
+}
+
+.userDetail {
+    display: none;
+}
+
+.has .userDetail {
+    display: block;
+}
+
+.adminDetail {
+    display: none;
+}
+
+.has .adminDetail {
+    display: block;
+}
+
+.page-title .search .layui-input-inline {
+    width: 160px;
+}
+
+.page-title .search button {
+    height: 37px;
+    line-height: 37px;
+}
+
+.qh-layer {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+}
+
+#qh-layer-form {
+    padding: 20px;
+}
+
+#qh-layer-form #qh-layer-info {
+    padding: 20px;
+    color: #FD482C;
+}
+
+#qh-layer-form-message #qh-layer-info {
+    padding: 20px;
+    color: #FD482C;
+}
+
+.layui-form input {
+    /*max-width: 717px;*/
+}
+
+.layui-form select {
+    /*max-width: 717px;*/
+}
+
+.layui-form .layui-input-block.md {
+    /*max-width: 717px;*/
+}
+
+.upload-img {
+    height: 100px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #dddddd;
+}
+
+.upload-img .layui-icon {
+    display: block;
+    font-size: 30px;
+}
+
+.self {
+    position: relative;
+}
+
+.self .info {
+    margin-top: 20px;
+}
+
+.self #updatePassword {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.self #updateMessage {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+}
+
+.self .info p {
+    line-height: 2;
+}
+
+
+.activityDetail {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.activityDetail .layui-container {
+    padding-top: 20px;
+}
+
+.activityDetail::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.activityDetail .note {
+    margin: 20px 0 40px 0;
+    color: #A5B0B6;
+}
+
+.activityDetail .content {
+    padding: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.activityDetail button {
+    float: right;
+    margin-top: 20px;
+}
+
+.layui-tab {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#qh-layer-img img {
+    max-height: 420px;
+}
+
+.video-input {
+    float: left;
+    width: 82%;
+    position: relative
+}
+
+.uploadButton {
+    width: 7%;
+    float: right;
+    margin-right: 1%
+}
+
+.showButton {
+    width: 7%;
+    float: right;
+    margin-right: 1%
+}
+
+.service-selected > .selected-item .delete-service {
+    display: block;
+}
+
+.service-selected > .selected-item > span {
+    padding: 0 10px;
+    color: gray;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.service-selected {
+    margin-left: 140px;
+    border: 1px solid #eee;
+    margin-top: 15px;
+    width: 64%;
+}
+
+.service-selected h4 {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-selected > .selected-item {
+    position: relative;
+    line-height: 32px;
+    color: #1681FF;
+}
+
+.end-icon {
+    position: absolute;
+    top: 5px;
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #1681FF;
+}
+
+.end-icon.delete-service {
+    color: #fa5500;
+    right: 10px;
+    font-size: 23px;
+    top: 1px;
+}
+
+/*使图片在浏览器中居中显示*/
+.bigImg {
+    position: absolute;
+    max-height: 550px;
+    top: 50%;
+    left: 50%;
+    /*图片向左移动自身宽度的50%, 向上移动自身高度的50%。*/
+    transform: translate(-50%, -50%);
+}
+
+/*遮罩层*/
+.opacityBottom {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}

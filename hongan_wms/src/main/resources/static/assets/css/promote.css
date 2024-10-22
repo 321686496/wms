@@ -1,0 +1,82 @@
+.layui-form-label {
+    width: 100px;
+}
+
+.layui-input-block {
+    margin-left: 130px;
+    min-height: 36px;
+}
+
+.trHeight {
+    height: 30px;
+}
+
+.goodsImg {
+    width: 400px;
+    height: 200px;
+}
+
+.item {
+    padding: 5px;
+}
+
+.hiddenId {
+    display: none;
+}
+
+.couponLabel {
+    padding: 10px 30px;
+    color: #62635c;
+    font-weight: bold;
+}
+
+.couponLabel > span {
+    font-weight: normal;
+}
+
+
+.hiddenDiv {
+    display: none;
+}
+
+.showDiv {
+    display: block;
+}
+
+.parent {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.bannerParent {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+}
+
+.bannerContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*.bannerDiv{*/
+/*    width:160px;*/
+/*    height: 90px;*/
+/*}*/
+.pageLayout-banner{
+    float: left;
+    width:150px;
+    height: 90px;
+    border: 1px solid blue;
+    text-align:center;
+}
+

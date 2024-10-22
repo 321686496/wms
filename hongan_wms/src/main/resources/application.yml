@@ -1,0 +1,66 @@
+server:
+  port: 9068
+  tomcat:
+    uri-encoding: utf-8
+#  servlet:
+#    context-path: /api/v1
+
+spring:
+  profiles:
+#        active: dev
+    active: prodTest
+
+  freemarker:
+    cache: false
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    settings:
+      default_encoding: UTF-8
+      number_format: '#'
+
+  resources:
+    static-locations: classpath:/static
+
+  aop:
+    proxy-target-class: true
+
+  cache:
+    type: redis
+    redis:
+      #60 * 60 * 24 * 100(天)
+      time-to-live: 8640000
+      cache-null-values: false
+      use-key-prefix: true
+
+  session:
+    store-type: redis
+    #60 * 60 * 24 * 100(天)
+    timeout: 8640000
+    redis:
+      namespace: SESSION
+
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+mybatis-plus:
+  # 实体类扫描路径
+  type-aliases-package: com.hongan.*.*.entity
+  # xml 扫描路径
+  mapper-locations: classpath:mapper/*/*.xml
+  typeEnumsPackage: com.hongan.template.enums
+  configuration:
+    jdbc-type-for-null: null
+    map-underscore-to-camel-case: true
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  global-config:
+    # 关闭 mybatis-plus的 banner
+    banner: false
+    # 配置逻辑删除设置
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0

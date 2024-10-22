@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    username: root
+    password: 619975564
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hongan_wms_db?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8&allowMultiQueries=true
+#    url: jdbc:mysql://localhost:3306/wms_vegetable?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8&allowMultiQueries=true
+    hikari:
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      connection-test-query: select 1
+      pool-name: QHDBPOOL
+      maximum-pool-size: 16
+      minimum-idle: 4
+
+  redis:
+    # Redis数据库索引（默认为 0）
+    database: 3
+    # Redis服务器地址
+    host: 111.229.119.100
+#    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6888
+    # Redis 密码
+    password:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+logging:
+  level:
+    root: INFO
+    com.hongan.*: DEBUG
+  file:
+    path: ./logs
